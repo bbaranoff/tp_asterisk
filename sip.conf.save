@@ -1,0 +1,36 @@
+[general]
+fromdomain=sip.diamondcard.us
+bind=
+bindport=5060
+srvlookup=yes
+disallow=all
+allow=ulaw
+allow=gsm
+language=en
+register => 485273:458052763836@sip.diamondcard.us
+context=diamondcardterm
+trustrpid = yes
+sendrpid = yes
+
+
+[diamondcard]
+type=peer
+username=485273
+secret=458052763836
+host=sip.diamondcard.us
+fromdomain=sip.diamondcard.us
+canreinvite=no
+insecure=invite,port
+host=dynamic
+
+[myuser]
+type=peer
+username=myuser
+secret=tester666
+host=dynamic
+qualify=no
+nat=force_rport,comedia
+disallow=all
+allow=ulaw
+allow=gsm
+fromdomain=sip.diamondcard.us
