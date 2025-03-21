@@ -1,4 +1,4 @@
-# Installation asterisk
+# Installation asterisk serveur (machine virtuelle)
 
 ```bash
 apt update
@@ -24,9 +24,11 @@ rm modules.conf extensions.conf
 wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/sip.conf
 wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/modules.conf
 wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/extensions.conf
+# Lancer asterisk :
+asterisk -cvvvvvvvv
 ```
 
-# Installer le Softphone
+# Installer le Softphone (sur l'hôte Windows)
 ```
 1 - Ajouter un compte 
 2 - nom : myuser / pass: tester
