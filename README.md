@@ -13,6 +13,7 @@ rm -rf asterisk-20-current.tar.gz
 cd asterisk-20*/
 contrib/scripts/install_prereq install
 ./configure
+make menuselect # bridging modules cocher chan_sip
 make -j$(nproc)
 make install
 ldconfig
