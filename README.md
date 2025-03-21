@@ -26,8 +26,9 @@ wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/ext
 ```
 
 # Installer le Softphone
-
+```
 1 - Ajouter un compte 
 2 - nom : myuser / pass: tester
 3 - desaticer dans l'onglet Préférences -> Réseau port d'écoute tcp 5060/ port d'écoute udp 5060
 4 - effectuer un test d'echo en appelant le 600
+``
