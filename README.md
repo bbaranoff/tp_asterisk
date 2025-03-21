@@ -1,5 +1,19 @@
-To run
-------
+#Installation asterisk
 
-    docker run p 5060:5060/udp -p 5038:5038 -p 8888:8888 -v $(pwd):/etc/asterisk -it quintana/asterisk bash
-    asterisk -c
+```bash
+apt update
+apt upgrade
+apt install curl
+systemctl stop apparmor
+apt remove apparmor
+cd /usr/src
+wget http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-20-current.tar.gz
+tar zxvf asterisk-20-current.tar.gz
+rm -rf asterisk-20-current.tar.gz
+cd asterisk-20*/
+contrib/scripts/install_prereq install
+./configure
+make -j$(nproc)
+make install
+ldconfig
+```
