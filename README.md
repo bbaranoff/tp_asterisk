@@ -1,4 +1,4 @@
-# Installation asterisk serveur (machine virtuelle)
+# Installation asterisk serveur (machine virtuelle debian bookworm)
 
 ```bash
 apt update
