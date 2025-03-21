@@ -17,4 +17,5 @@ make menuselect # bridging modules cocher chan_sip
 make -j$(nproc)
 make install
 ldconfig
+make basic-pbx
 ```
