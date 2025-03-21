@@ -18,4 +18,9 @@ make -j$(nproc)
 make install
 ldconfig
 make basic-pbx
+rm /etc/asterisk/pjsip*
+cd /etc/asterisk
+wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/sip.conf
+wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/mdules.conf
+wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/extensions.conf
 ```
