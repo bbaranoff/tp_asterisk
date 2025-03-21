@@ -20,8 +20,9 @@ ldconfig
 make basic-pbx
 rm /etc/asterisk/pjsip*
 cd /etc/asterisk
+rm modules.conf extensions.conf
 wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/sip.conf
-wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/mdules.conf
+wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/modules.conf
 wget https://raw.githubusercontent.com/bbaranoff/tp_asterisk/refs/heads/main/extensions.conf
 ```
 
